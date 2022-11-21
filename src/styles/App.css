@@ -59,18 +59,6 @@ a:visited {
   display: none;
 }
 
-.video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.you-tube {
-  margin: 100px auto 0 auto;
-  width: 80vw;
-  height: 50vw;
-}
-
 @media only screen and (min-width: 1024px) {
   .App {
     padding: 0 100px;
@@ -80,10 +68,5 @@ a:visited {
   }
   .banner2 {
     display: block;
-  }
-  .you-tube {
-    margin: 200px auto 0 auto;
-    width: 50vw;
-    height: 30vw;
   }
 }

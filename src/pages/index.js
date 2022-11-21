@@ -54,15 +54,7 @@ const IndexPage = (props) => {
       )}
 
       <Suggestions language={language} languageToUse={languageToUse} />
-      <div className="video-container">
-        <iframe
-          className="you-tube"
-          src="https://www.youtube.com/embed/l7S7Rd8ujDQ"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
+
       <InstaFeed language={language} languageToUse={languageToUse} />
 
       <Contact language={language} languageToUse={languageToUse} />

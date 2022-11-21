@@ -46,7 +46,7 @@ export const english = {
 
   moreInfo: "Do not hesitate to contact us for more suggestions",
 
-  instaFeed: "In photos",
+  instaFeed: "In images",
 
   contactMainTitle: "To contact us",
 

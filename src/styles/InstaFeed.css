@@ -2,3 +2,23 @@
   margin: 40px 0 40px 0;
   padding-top: 80px;
 }
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.you-tube {
+  margin: 50px auto;
+  width: 80vw;
+  height: 50vw;
+}
+
+@media only screen and (min-width: 1024px) {
+  .you-tube {
+    margin: 100px auto;
+    width: 50vw;
+    height: 30vw;
+  }
+}
