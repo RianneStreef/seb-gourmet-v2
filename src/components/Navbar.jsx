@@ -48,10 +48,10 @@ const Navbar = (props) => {
   return (
     <Nav>
       <Name>
-        <Link to="home" spy={true} smooth={true}>
+        <Link to="/" spy={true} smooth={true}>
           <NameTitle>Seb Gourmet</NameTitle>
         </Link>
-        <Link to="home" spy={true} smooth={true}>
+        <Link to="/" spy={true} smooth={true}>
           <Title>Traiteur</Title>
         </Link>
       </Name>{" "}
