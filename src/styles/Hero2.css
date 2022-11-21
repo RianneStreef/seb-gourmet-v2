@@ -1,0 +1,15 @@
+.slider {
+  margin: auto;
+  /* width: 100% !important; */
+  width: auto !important;
+}
+
+.placeholder {
+  height: 80px;
+}
+
+@media only screen and (min-width: 1200px) {
+ .slider{
+  width: 90% !important;
+ }
+}

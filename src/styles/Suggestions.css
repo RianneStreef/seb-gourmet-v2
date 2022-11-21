@@ -1,0 +1,98 @@
+.suggestions {
+  background-color: #f1efef;
+  padding-top: 50px;
+}
+
+.suggestion-cards-display {
+  display: flex;
+  flex-direction: column;
+}
+
+.suggestion-card {
+  padding: 20px 40px;
+  margin: 30px;
+  /* background-color: #d8d6d6; */
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.suggestion-card p {
+  text-align: center;
+}
+
+.suggestion-title {
+  margin-top: 80px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+}
+
+.tilde {
+  width: 40%;
+  padding: 40px;
+}
+
+.suggestion-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.round-header {
+  width: 40%;
+  align-items: center;
+}
+
+.menu-title {
+  margin-bottom: 40px;
+}
+
+.meal-title {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.meal-description {
+  margin-top: 0;
+}
+
+.more-info {
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  padding: 0 0 50px 0;
+  font-size: 0.7rem;
+
+}
+
+.suggestion-button-container {
+  padding: 0 0 40px 0 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .suggestion-cards-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 60px 60px 20px 60px; 
+
+  }
+  .suggestion-card {
+    width: 30%;
+  }
+
+  .more-info {
+    font-size: 0.8rem;
+  }
+
+  .round-header {
+    width: 70%;
+    align-items: center;
+  }
+}

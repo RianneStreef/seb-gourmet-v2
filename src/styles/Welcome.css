@@ -1,0 +1,49 @@
+.welcome {
+  max-width: 1000px;
+  text-align: center;
+  margin: 20px auto;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.welcome-img {
+  display: none;
+}
+
+.welcome-title {
+  margin-top: 50px;
+}
+
+@media only screen and (min-width: 1024px) {
+.welcome {
+  flex-direction: column; 
+
+}
+
+.welcome-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.welcome-right{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 30%;
+}
+
+.welcome-left {
+  width: 70%;
+}
+
+.welcome-img{
+  display: flex;
+  margin: auto;
+  width: 80%;
+}
+
+}
