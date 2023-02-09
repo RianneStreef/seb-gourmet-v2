@@ -20,7 +20,7 @@ const Copyright = (props) => {
           {" "}
           <i class="far fa-copyright" />{" "}
         </sup>{" "}
-        {language.copyright}
+        {language.copyright} 2023
       </p>
       <p>
         {language.copyright2} <Link to="/legal">{language.mentionsLegale}</Link>
