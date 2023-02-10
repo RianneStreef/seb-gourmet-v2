@@ -12,6 +12,9 @@ const Copyright = (props) => {
   language === "english"
     ? (language = content.english)
     : (language = content.french);
+
+  let year = new Date().getFullYear();
+
   return (
     <div className="copyright">
       <p>
@@ -20,7 +23,7 @@ const Copyright = (props) => {
           {" "}
           <i class="far fa-copyright" />{" "}
         </sup>{" "}
-        {language.copyright} 2023
+        {language.copyright} {year}
       </p>
       <p>
         {language.copyright2} <Link to="/legal">{language.mentionsLegale}</Link>
