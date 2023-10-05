@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/App.css";
 import Hero from "../components/Hero";
 import Welcome from "../components/Welcome";
@@ -15,9 +15,46 @@ import banner from "../images/banner.jpg";
 import bannerEN from "../images/bannerEN.jpg";
 import banner2 from "../images/banner2.jpg";
 
+import ReactGA from "react-ga4";
+import CookieConsent, {
+  getCookieConsentValue,
+  Cookies,
+} from "react-cookie-consent";
+
+import { content } from "../content/languages";
+
 const IndexPage = (props) => {
   let { language, setLanguage, languageToUse } = props;
   console.log(props);
+
+  language === "english"
+    ? (languageToUse = content.english)
+    : (languageToUse = content.french);
+
+  const initGA = (id) => {
+    // if (process.env.NODE_ENV === "production") {
+    console.log("InitGA");
+    ReactGA.initialize(id);
+    //}
+  };
+
+  const handleAcceptCookie = () => {
+    initGA("G-MEYTRT1XT5");
+  };
+
+  const handleDeclineCookie = () => {
+    Cookies.remove("_ga");
+    Cookies.remove("_gat");
+    Cookies.remove("_gid");
+  };
+
+  useEffect(() => {
+    const isConsent = getCookieConsentValue();
+
+    if (isConsent === "true") {
+      handleAcceptCookie();
+    }
+  }, []);
 
   return (
     <div className="App">
@@ -32,6 +69,16 @@ const IndexPage = (props) => {
         <link rel="canonical" href="https://www.sebgourmet-traiteur.com/" />
         <link rel="icon" href={favicon} />
       </Helmet>
+      <CookieConsent
+        enableDeclineButton
+        onAccept={handleAcceptCookie}
+        onDecline={handleDeclineCookie}
+        buttonText={languageToUse.cookieAccept}
+        declineButtonText={languageToUse.cookieDecline}
+      >
+        <p className="cookie-text-header">{languageToUse.cookieHeader}</p>
+        <p className="cookie-text">{languageToUse.cookieText}</p>
+      </CookieConsent>
       <Hero
         language={language}
         setLanguage={setLanguage}

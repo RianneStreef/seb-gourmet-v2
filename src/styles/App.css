@@ -59,6 +59,35 @@ a:visited {
   display: none;
 }
 
+.cookie-text-header {
+  font-size: 30px;
+  margin: 5px;
+}
+.cookie-text {
+  margin: 5px;
+}
+
+#rcc-decline-button {
+  background-color: #fff !important;
+  border: 2px solid #ffa33d !important;
+}
+
+#rcc-confirm-button {
+  background-color: #ffa33d !important;
+}
+
+.CookieConsent {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.CookieConsent button {
+  font-family: "Cormorant Garamond" !important;
+  color: #000 !important;
+
+  /* border-radius: 10px !important; */
+}
+
 @media only screen and (min-width: 1024px) {
   .App {
     padding: 0 100px;

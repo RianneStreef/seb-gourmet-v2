@@ -64,6 +64,11 @@ export const english = {
   ourAddress: "Seb Gourmet Traiteur",
   ourAddress2: "73440 Les Belleville France",
 
+  cookieHeader: "WE VALUE YOUR PRIVACY!",
+  cookieText: "This website uses cookies to evaluate our traffic.",
+  cookieAccept: "I accept!",
+  cookieDecline: "I decline..",
+
   copyright: "Seb Gourmet Traiteur. All rights reserved.",
   copyright2: "Pictures are not contractual.",
   mentionsLegale: "- Legal mentions",
