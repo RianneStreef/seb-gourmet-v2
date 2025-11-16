@@ -14,11 +14,12 @@ const InstaFeed = (props) => {
   return (
     <>
       <Helmet>
-        <script
+        {/* <script
           src="https://cdn2.woxo.tech/a.js#60ca0c172d51e300159c2b7c"
           async
           data-usrc
-        />
+        /> */}
+        <script src="https://elfsightcdn.com/platform.js" async></script>
       </Helmet>
       <div id="insta" className="insta">
         <h2>{language.instaFeed}</h2>
@@ -31,7 +32,12 @@ const InstaFeed = (props) => {
             allowfullscreen
           ></iframe>
         </div>
-        <div data-mc-src="f10e8e66-aada-4742-9b38-f3d4068eec81#instagram"></div>
+        {/* <div data-mc-src="f10e8e66-aada-4742-9b38-f3d4068eec81#instagram"></div> */}
+
+        <div
+          class="elfsight-app-52bf367c-dc11-4f29-b93f-aa4ae8c3b368"
+          data-elfsight-app-lazy
+        ></div>
       </div>
     </>
   );
