@@ -5,6 +5,7 @@ export const french = {
   menuSuggestions: "Suggestions",
   menuInsta: "Images",
   menuContact: "Contact",
+  menuReserver: "Réservez vos repas",
 
   welcomeHeader: "Bienvenue",
   welcomeText:

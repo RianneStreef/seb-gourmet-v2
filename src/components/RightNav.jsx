@@ -120,6 +120,12 @@ function RightNav(props) {
           <p className="nav-link">{languageToUse.menuContact}</p>
         </Link>
       </li>
+      <span className="dot">&#8226;</span>
+      <li className="menu-item">
+        <a href="https://menu-sebgourmet-traiteur.com/">
+          <p className="nav-link">{languageToUse.menuReserver}</p>
+        </a>
+      </li>
       <li>
         {languageToUse.language === "english" ? (
           <img

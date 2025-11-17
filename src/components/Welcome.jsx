@@ -16,6 +16,9 @@ const Welcome = (props) => {
         <div className="welcome-left">
           <p className="line-height">{language.welcomeText}</p>
           <p className="line-height">{language.welcomeText2}</p>
+          <a className="button" href="https://menu-sebgourmet-traiteur.com/">
+            {language.menuReserver}
+          </a>
         </div>
         <div className="welcome-right">
           <img src={imgWelcome} alt="Pain" className="welcome-img" />

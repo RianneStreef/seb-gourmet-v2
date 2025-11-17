@@ -6,6 +6,7 @@ export const english = {
   menuSuggestions: "Suggestions",
   menuInsta: "Photos",
   menuContact: "Contact",
+  menuReserver: "Reserve your meal",
 
   welcomeHeader: "Welcome",
   welcomeText:
