@@ -50,7 +50,7 @@ li {
 }
 
 .nav-link {
-  text-align: right;
+  text-align: left;
   margin: 10px;
 }
 
@@ -92,10 +92,10 @@ li {
     justify-content: center;
   }
 
-.language-icon {
-  height: 20px;
-  width: 25px;
-  margin: 10px 160px 10px 10px;
-  cursor: pointer;
-}
+  .language-icon {
+    height: 20px;
+    width: 25px;
+    margin: 10px 160px 10px 10px;
+    cursor: pointer;
+  }
 }
